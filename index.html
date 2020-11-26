@@ -16,13 +16,22 @@
 <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs="debugUIEnabled:false;">
         <a-entity camera></a-entity>
+        <!-- Assetの用意　 -->
+        <a-assets>
+
+            <!-- 3Dモデル stronaut -->
+            <a-asset-item id="icon-obj" src="img/icon.obj"></a-asset-item>
+            <!-- マテリアル -->
+            <a-asset-item id="icon-mat" src="img/icon.mtl"></a-asset-item>
+            
+        </a-assets>
 
         <!-- Markerを表示した際の処理を以下に記述する -->
         <a-marker type="pattern" url="img/pattern_simple_qrcode.patt">
 
             <!-- icon -->
-            <a-image width="1" height="0.3" position="-0.8 0.4 0.4" rotation="-90 0 0" src="img/icon.png" link="href: https://www.olfa.co.jp/index.html;">
-            </a-image>
+            <a-obj-model scale="1 1 1" position="-0.8 0.4 0.4" rotation="-90 0 0" src="#icon-obj" mtl="#icon-mat" link="href: https://www.olfa.co.jp/index.html;">
+            </a-obj-model>
 
             <!-- name -->
             <a-image width="0.8" height="0.7" position="0.25 0.4 0.4" rotation="-90 0 0" src="img/name.png">
