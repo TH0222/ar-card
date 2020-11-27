@@ -63,6 +63,7 @@
             <a-asset-item id="icon-obj" src="img/icon.obj"></a-asset-item>
             <!-- マテリアル -->
             <a-asset-item id="icon-mat" src="img/icon.mtl"></a-asset-item>
+            <img id="tel-img" crossOrigin="anonymous" src="img/phone.png">
             
         </a-assets>
 
@@ -84,7 +85,11 @@
             <!-- contact -->
             <a-image width="1" height="1" position="0.75 0.4 -1" rotation="-90 0 0" src="img/contacts.png">
             </a-image>
-
+            
+            <!-- phone-button -->
+            <a-link href="tel:06-6972-8103" title="phone" image="#tel-img" position="0.75 0.4 0">
+            </a-link>
+            
         </a-marker>
     </a-scene>
 </body>
