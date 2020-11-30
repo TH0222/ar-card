@@ -61,9 +61,12 @@
 
             <!-- 3Dモデル stronaut -->
             <a-asset-item id="icon-obj" src="img/icon.obj"></a-asset-item>
+            <a-asset-item id="phone-obj" src="img/phone.obj"></a-asset-item>
+            <a-asset-item id="mail-obj" src="img/mail.obj"></a-asset-item>
             <!-- マテリアル -->
             <a-asset-item id="icon-mat" src="img/icon.mtl"></a-asset-item>
-            <img id="tel-img" crossOrigin="anonymous" src="img/phone.png">
+            <a-asset-item id="phone-mat" src="img/phone.mtl"></a-asset-item>
+            <a-asset-item id="mail-mat" src="img/mail.mtl"></a-asset-item>
             
         </a-assets>
 
@@ -71,7 +74,7 @@
         <a-marker type="pattern" url="img/pattern_simple_qrcode.patt">
 
             <!-- icon -->
-            <a-obj-model scale="0.15 0.15 0.15" position="-0.5 0.4 -2.1" rotation="0 0 0" src="#icon-obj" mtl="#icon-mat" link="href: tel:+81-6-6972-8103;">
+            <a-obj-model scale="0.15 0.15 0.15" position="-0.5 0.4 -2.1" rotation="0 0 0" src="#icon-obj" mtl="#icon-mat" link="href: https://www.olfa.co.jp/index.html;">
             </a-obj-model>
 
             <!-- name -->
@@ -85,6 +88,14 @@
             <!-- contact -->
             <a-image width="1" height="1" position="0.75 0.4 -1" rotation="-90 0 0" src="img/contacts.png">
             </a-image>
+            
+            <!-- phone -->
+            <a-obj-model scale="0.15 0.15 0.15" position="-0.5 0.4 1" rotation="0 0 0" src="#phone-obj" mtl="#phone-mat" link="href: tel:+81-6-6972-8103;">
+            </a-obj-model>
+            
+            <!-- icon -->
+            <a-obj-model scale="0.15 0.15 0.15" position="-0.5 0.4 2" rotation="0 0 0" src="#mail-obj" mtl="#mail-mat" link="href: mailto:t_hamada@ola.co.jp;">
+            </a-obj-model>
             
         </a-marker>
 
